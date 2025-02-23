@@ -1,0 +1,338 @@
+/*why this matters*/
+a
+{
+	text-decoration: none;
+}
+
+* 
+{
+  box-sizing: border-box;
+  font-family: Gill sans, sans-serif;
+}
+
+.item1 { grid-area: logo; }
+.item2 { grid-area: nav; }
+.item3 { grid-area: headline image, text; }
+.image1 { grid-area: animal1; }
+.image2 { grid-area: animal2; }
+.image3 { grid-area: animal3; }
+.image4 { grid-area: animal4; }
+.image5 { grid-area: animal5; }
+.image6 { grid-area: animal6; }
+.image7 { grid-area: animal7; }
+.image8 { grid-area: animal8; }
+.item5 { grid-area: sentence;}
+.item6 { grid-area: footer; }
+.item7 { grid-area: footer; }
+
+.grid-container
+{
+	display: grid;
+	gap: 50px;
+	grid-template-columns: repeat(6,1fr);
+	grid-template-rows: auto 400px 100px 200px 80px 200px 80px auto 180px;
+	grid-gap: 0;
+}
+
+.grid-container > div
+{
+	text-align: left;
+	font-size: 24x;
+}
+
+.item1
+{
+	grid-column: 1 / 2;
+	grid-row: 1;
+}
+
+.item2
+{
+	grid-column: 2 / 7;
+	grid-row: 1;
+}
+
+.item3
+{
+	grid-column: 1 / span 6;
+	grid-row: 2;
+}
+
+.image1
+{
+	grid-column: 2;
+	grid-row: 4;
+}
+
+.image2
+{
+	grid-column: 3;
+	grid-row: 4;
+}
+
+.image3
+{
+	grid-column: 4;
+	grid-row: 4;
+}
+
+.image4
+{
+	grid-column: 5;
+	grid-row: 4;
+}
+
+.image5
+{
+	grid-column: 2;
+	grid-row: 6;
+}
+
+.image6
+{
+	grid-column: 3;
+	grid-row: 6;
+}
+
+.image7
+{
+	grid-column: 4;
+	grid-row: 6;
+}
+
+.image8
+{
+	grid-column: 5;
+	grid-row: 6;
+}
+
+#name1
+{
+	grid-column: 2;
+	grid-row: 5;
+}
+
+#name2
+{
+	grid-column: 3;
+	grid-row: 5;
+}
+
+#name3
+{
+	grid-column: 4;
+	grid-row: 5;
+}
+
+#name4
+{
+	grid-column: 5;
+	grid-row: 5;
+}
+
+#name5
+{
+	grid-column: 2;
+	grid-row: 7;
+}
+
+#name6
+{
+	grid-column: 3;
+	grid-row: 7;
+}
+
+#name7
+{
+	grid-column: 4;
+	grid-row: 7;
+}
+
+#name8
+{
+	grid-column: 5;
+	grid-row: 7;
+}
+
+.item5
+{
+	grid-column: 2 / 6;
+	grid-row: 8;
+}
+
+.item6
+{
+	grid-column: 1 / 7;
+	grid-row: 9;
+}
+
+.item7
+{
+	grid-column: 5 / 7;
+	grid-row: 9;
+}
+
+/*item 1 logo*/
+
+#logo
+{
+	padding-top: 12px;
+	width: 130px;
+}
+
+/*item 2 nav bar*/
+#nav ul 
+{
+	list-style-type: none;
+	float: right;
+	padding-bottom: 20px;
+}
+
+#nav ul li 
+{
+	display: inline;
+	float: left;
+	padding-top: 30px;
+}
+
+.navLink
+{
+	display: block;
+	float: right;
+	margin-right:23px;
+	font-size: 23px;
+	color: #465648;
+}
+
+.navLink:hover
+{
+	color: #698F73;
+	text-decoration: underline;
+	text-underline-offset: 10px;
+}
+
+/*item 3*/
+#wildlifeBlock
+{
+	position:  relative;
+	background-repeat:  no-repeat;
+}
+
+.sectionText
+{
+	display: block;
+	width: 100%;
+	text-align: center;
+	top: 20%;
+	position: absolute;
+	margin-left: auto;
+	margin-right:  auto;
+}
+
+#headlineFigure
+{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.sectionTitle
+{
+	color: white;
+	font-size: 40px;
+	text-decoration-line: underline;
+	text-decoration-thickness: 5px;
+	text-underline-offset: 30px;
+}
+
+.sectionBody
+{
+	color: white;
+	font-size: 22px;
+	line-height:  50px;
+}
+
+/*wildlife animal images*/
+.image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8
+{
+	overflow: hidden;
+	object-fit: cover;
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 100%;
+}
+
+#animal1, #animal2, #animal3, #animal4, #animal5, #animal6, #animal7, #animal8
+{
+	height: 200px;
+}
+
+#name1, #name2, #name3, #name4, #name5, #name6, #name7, #name8
+{
+	text-align: center;
+	color: #495F4F;
+	font-size: 22px;
+	padding-top: 10px;
+
+}
+
+/*item 5 text*/
+
+#wildlifeBottomBlock
+{
+	display: block;
+	padding-bottom: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#wildlifeBody2
+{
+	color: #495F4F;
+	font-size: 30px;
+	text-align: center;
+	font-style: italic;
+	letter-spacing: 0.8px;
+
+}
+
+/*item 6 footer*/
+#footer
+{
+	background-color: #495F4F;
+}
+
+.footerItem1
+{
+	display: block;
+	padding-left: 10%;
+	margin-top: 18px;
+}
+
+#footerTextTitle /*contact*/
+{
+	font-size: 18px;
+	color: #DDE2D3;
+	font-weight: bold ;
+	float: left;
+}
+
+#footerText
+{
+	font-size: 18px;
+	color: #DDE2D3;
+	float: left;
+	clear: left;
+}
+
+/*item 7 footer-copyright*/
+
+.footerCopyright
+{
+	font-size: 15px;
+	float: right;
+	margin-right: 13%;
+	margin-top: 22%;
+	color: #DDE2D3;
+}
+

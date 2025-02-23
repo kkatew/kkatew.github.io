@@ -1,0 +1,353 @@
+a
+{
+	text-decoration: none;
+}
+
+* 
+{
+  box-sizing: border-box;
+  font-family: Gill sans, sans-serif;
+}
+
+@font-face
+{
+	font-family: Orbitron;
+  src: url(fonts/Orbitron/static/Orbitron-Regular.ttf)
+}
+
+
+.item1 { grid-area: logo; }
+.item2 { grid-area: nav; }
+.item3 { grid-area: want text; }
+.item4 { grid-area: background color; }
+.item5 { grid-area: footer; }
+.item6 { grid-area: footer; }
+
+.grid-container
+{
+	display: grid;
+	gap: 50px;
+	grid-template-columns: repeat(6,1fr);
+	grid-template-rows: auto 630px 400px 80px 340px auto 80px 180px;
+	grid-gap: 0;
+}
+
+.grid-container > div
+{
+	text-align: left;
+	font-size: 24x;
+}
+
+.item1
+{
+	grid-column: 1 / 2;
+	grid-row: 1;
+}
+
+.item2
+{
+	grid-column: 2 / 7;
+	grid-row: 1;
+}
+
+.item3 
+{
+	grid-column: 1 / span 7;
+	grid-row: 2;
+}
+
+.item4
+{
+	grid-column: 1 / 7;
+	grid-row: 2 / span 3;
+	background-color: #495F4F;
+}
+
+.circle1
+{
+	grid-column: 1 / span 2;
+	grid-row: 3;
+	justify-content: center;
+	display: flex;
+}
+
+.circle2
+{
+	grid-column: 3 / span 2;
+	grid-row: 3;
+	justify-content: center;
+	display: flex;
+}
+
+.circle3
+{
+	grid-column: 5 / span 2;
+	grid-row: 3;
+	justify-content: center;
+	display: flex;
+}
+
+.box1
+{
+	grid-column: 1 / span 2;
+	grid-row: 5 / 6;
+	justify-content: center;
+	display: flex;
+}
+
+.box2
+{
+	grid-column: 3 / span 2;
+	grid-row: 5 / 6;
+	justify-content: center;
+	display: flex;
+}
+
+.box3
+{
+	grid-column: 5 / span 2;
+	grid-row: 5 / 6;
+	justify-content: center;
+	display: flex;
+}
+
+.button1
+{
+	grid-column: 1 / span 2;
+	grid-row: 6;
+}
+
+.button2
+{
+	grid-column: 3 / span 2;
+	grid-row: 6;
+}
+
+.button3
+{
+	grid-column: 5 / span 2;
+	grid-row: 6;
+}
+
+.item5
+{
+	grid-column: 1 / 7;
+	grid-row: 8;
+}
+
+.item6
+{
+	grid-column: 5 / 7;
+	grid-row: 8;
+}
+
+/*item 1 logo*/
+#logo
+{
+	padding-top: 12px;
+	width: 130px;
+}
+
+/*item 2 nav bar*/
+#nav ul 
+{
+	list-style-type: none;
+	float: right;
+	padding-bottom: 20px;
+}
+
+#nav ul li 
+{
+	display: inline;
+	float: left;
+	padding-top: 30px;
+}
+
+.navLink
+{
+	display: block;
+	float: right;
+	margin-right:23px;
+	font-size: 23px;
+	color: #465648;
+}
+
+.navLink:hover
+{
+	color: #698F73;
+	text-decoration: underline;
+	text-underline-offset: 10px;
+}
+
+/*item 3 text*/
+.sectionText
+{
+	display: block;
+	text-align: center;
+	top: 18%;
+	position: absolute;
+	margin-left: auto;
+	margin-right:  auto;
+	color: #DDE2D3;
+}
+
+.sectionTitle
+{
+	font-size: 40px;
+	margin-bottom: 10px;
+	color: white;
+}
+
+.sectionSubtitle
+{
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 22px;
+}
+
+.sectionBody
+{
+	font-size: 22px;
+	line-height:  50px;
+	padding-left: 18%;
+	padding-right: 18%;
+}
+
+#subText
+{
+	font-size: 30px;
+	padding-left: 13%;
+	padding-right: 13%;
+	margin-top: 5%;
+	color: white;
+}
+
+
+/*circles*/
+.circleBlock
+{
+	border-radius: 50%;
+	width: 400px;
+	height: 400px;
+	background-color: #F0E3CA;
+	text-align: center; 
+}
+
+.circleNumber
+{
+	font-size: 60px;
+	margin-bottom: 10px;
+	color: #495F4F;
+	margin-top: 30px;
+}
+
+.circleTitle
+{
+	font-size: 40px;
+	margin-bottom: 10px;
+	color: #495F4F;
+	margin-top: 18px;
+}
+
+.circleText
+{
+	font-size: 22px;
+	line-height:  40px;
+	padding-left: 10%;
+	padding-right: 10%;
+	color: #495F4F;
+	margin-top: 3%;
+}
+
+#circle2Text
+{
+	line-height:  30px;
+}
+
+/*boxes*/
+.boxBlock
+{
+	display: block;
+	width: 300px;
+	height: 400px;
+	background-color: #DDE2D3;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.boxTitle
+{
+	font-size: 30px;
+	color: black;
+	margin-bottom: 10px;
+	margin-top: 50px;
+}
+
+.boxText
+{
+	font-size: 20px;
+	color: #495F4F;
+	line-height:  30px;
+	padding-left: 14%;
+	padding-right: 14%;
+	margin-top: 10%;
+}
+
+/*buttons*/
+.buttonBlock
+{
+	background-color: #B0A025;
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	color: white;
+	text-transform: uppercase;
+	padding: 4px 9px;
+	margin-left: 170px;
+	margin-right: 170px;
+	margin-top: 0;
+}
+
+
+/*item 5 footer*/
+#footer
+{
+	background-color: #495F4F;
+	height:  180px;
+}
+
+.footerItem1
+{
+	display: block;
+	padding-left: 10%;
+	margin-top: 18px;
+}
+
+#footerTextTitle /*contact*/
+{
+	font-size: 18px;
+	color: #DDE2D3;
+	font-weight: bold ;
+	float: left;
+}
+
+#footerText
+{
+	font-size: 18px;
+	color: #DDE2D3;
+	float: left;
+	clear: left;
+}
+
+/*item 6 footer-copyright*/
+
+.footerCopyright
+{
+	font-size: 15px;
+	float: right;
+	margin-right: 13%;
+	margin-top: 22%;
+	color: #DDE2D3;
+}
+
